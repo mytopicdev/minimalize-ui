@@ -16,15 +16,17 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'minimalize-ui',
-      fileName: (format) => `minimalize-ui.${format}.js`,
+      fileName: (format) => `minimalize-ui.${format === 'cjs' ? 'cjs' : `${format}.js`}`,
       formats: ['es', 'cjs', 'umd'],
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'react/jsx-runtime', 'react/jsx-dev-runtime'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'ReactJSXRuntime',
+          'react/jsx-dev-runtime': 'ReactJSXDevRuntime',
         },
       },
     },
