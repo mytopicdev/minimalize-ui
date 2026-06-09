@@ -1,7 +1,7 @@
 {
   "name": "minimalize-ui",
   "private": false,
-  "version": "0.2.5",
+  "version": "0.3.0",
   "type": "module",
   "packageManager": "pnpm@11.5.2",
   "main": "dist/minimalize-ui.cjs",
