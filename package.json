@@ -3,6 +3,7 @@
   "private": false,
   "version": "0.2.5",
   "type": "module",
+  "packageManager": "pnpm@11.5.2",
   "main": "dist/minimalize-ui.cjs",
   "module": "dist/minimalize-ui.es.js",
   "unpkg": "dist/minimalize-ui.umd.js",
@@ -20,7 +21,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "prepare": "npm run build",
+    "prepare": "pnpm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

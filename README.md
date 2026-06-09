@@ -4,7 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 #### Step 1
 
-npm version patch
+pnpm version patch
 
 #### Step 2
 
@@ -12,4 +12,4 @@ git push origin main --tags
 
 #### Step 3
 
-npm publish
+pnpm publish
